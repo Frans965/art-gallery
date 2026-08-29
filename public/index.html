@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery — Creative Showcase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Art<span>Gallery</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Gallery</a></li>
+          <li><a href="upload.html">Upload</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <h1>Creative Showcase</h1>
+      <p>Discover stunning artworks from talented creators around the world.</p>
+    </section>
+
+    <section class="container">
+      <div class="controls">
+        <input type="text" id="search-input" class="search-input" placeholder="Search by title or creator...">
+        <select id="category-filter" class="filter-select">
+          <option value="all">All Categories</option>
+          <option value="painting">Painting</option>
+          <option value="digital">Digital Art</option>
+          <option value="photography">Photography</option>
+          <option value="sculpture">Sculpture</option>
+          <option value="illustration">Illustration</option>
+          <option value="mixed-media">Mixed Media</option>
+          <option value="other">Other</option>
+        </select>
+        <select id="sort-select" class="sort-select">
+          <option value="newest">Newest First</option>
+          <option value="trending">Top / Trending</option>
+        </select>
+      </div>
+
+      <div id="gallery-grid" class="gallery-grid"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 Online Art Gallery &amp; Creative Showcase</div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
