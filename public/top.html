@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top Artworks — ARTORA</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="top">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">Art<span>ora</span></a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="top.html" class="active">Top</a></li>
+          <li><a href="add-artwork.html">Add Artwork</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Top Artworks</h1>
+        <p>Ranked by community votes — the most celebrated pieces in the gallery.</p>
+      </div>
+    </section>
+
+    <section class="page-main">
+      <div class="container">
+        <div class="controls">
+          <input type="text" id="search-input" class="search-input" placeholder="Search by title or creator...">
+          <select id="category-filter" class="filter-select">
+            <option value="all">All Categories</option>
+            <option value="painting">Painting</option>
+            <option value="digital">Digital Art</option>
+            <option value="photography">Photography</option>
+            <option value="sculpture">Sculpture</option>
+            <option value="illustration">Illustration</option>
+            <option value="mixed-media">Mixed Media</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div id="category-pills" class="category-pills"></div>
+
+        <div class="results-meta">
+          <span id="results-count" class="results-count"></span>
+        </div>
+
+        <div id="gallery-grid" class="gallery-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">&copy; 2026 ARTORA — Online Art Gallery &amp; Creative Showcase</div>
+  </footer>
+
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

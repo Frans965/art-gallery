@@ -3,17 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art Gallery — Creative Showcase</title>
+  <title>ARTORA — Online Art Gallery</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-page="home">
   <header class="site-header">
     <div class="container header-inner">
-      <a href="index.html" class="logo">Art<span>Gallery</span></a>
+      <a href="index.html" class="logo">Art<span>ora</span></a>
       <nav>
         <ul class="nav-links">
-          <li><a href="index.html" class="active">Gallery</a></li>
-          <li><a href="upload.html">Upload</a></li>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="top.html">Top</a></li>
+          <li><a href="add-artwork.html">Add Artwork</a></li>
         </ul>
       </nav>
     </div>
@@ -21,37 +23,34 @@
 
   <main>
     <section class="hero container">
-      <h1>Creative Showcase</h1>
-      <p>Discover stunning artworks from talented creators around the world.</p>
+      <p class="hero-eyebrow">Creative Showcase</p>
+      <h1>Discover Art That Inspires</h1>
+      <p>Explore curated works from talented creators. Vote for your favorites and share your own masterpieces.</p>
+      <div class="hero-actions">
+        <a href="gallery.html" class="btn btn-primary">Browse Gallery</a>
+        <a href="add-artwork.html" class="btn btn-outline">Submit Artwork</a>
+      </div>
     </section>
 
-    <section class="container">
-      <div class="controls">
-        <input type="text" id="search-input" class="search-input" placeholder="Search by title or creator...">
-        <select id="category-filter" class="filter-select">
-          <option value="all">All Categories</option>
-          <option value="painting">Painting</option>
-          <option value="digital">Digital Art</option>
-          <option value="photography">Photography</option>
-          <option value="sculpture">Sculpture</option>
-          <option value="illustration">Illustration</option>
-          <option value="mixed-media">Mixed Media</option>
-          <option value="other">Other</option>
-        </select>
-        <select id="sort-select" class="sort-select">
-          <option value="newest">Newest First</option>
-          <option value="trending">Top / Trending</option>
-        </select>
+    <section class="section-dark">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Top Trending</h2>
+            <p>Most loved artworks from the community</p>
+          </div>
+          <a href="top.html" class="section-link">View all &rarr;</a>
+        </div>
+        <div id="featured-grid" class="gallery-grid"></div>
       </div>
-
-      <div id="gallery-grid" class="gallery-grid"></div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">&copy; 2026 Online Art Gallery &amp; Creative Showcase</div>
+    <div class="container">&copy; 2026 ARTORA — Online Art Gallery &amp; Creative Showcase</div>
   </footer>
 
-  <script src="js/app.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
